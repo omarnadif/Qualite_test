@@ -9,11 +9,15 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "express": "^5.1.0"
-  },
   "devDependencies": {
+    "@playwright/test": "^1.53.1",
     "jest": "^30.0.3",
     "playwright": "^1.53.1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
   }
 }

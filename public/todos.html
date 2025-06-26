@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gérer les tâches</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-100 via-blue-200 to-white min-h-screen font-sans flex flex-col min-h-screen">
+
+<header class="py-8">
+  <h1 class="text-5xl font-extrabold text-center text-blue-700 mb-2 tracking-tight drop-shadow">Gestion des tâches</h1>
+  <p class="text-center text-blue-400 font-medium text-lg">Créez, complétez, modifiez et supprimez vos tâches facilement.</p>
+</header>
+
+<main class="flex-1 flex flex-col items-center">
+  <div class="w-full max-w-2xl bg-white/90 rounded-3xl shadow-2xl p-8">
+
+    <!-- Formulaire -->
+    <form id="taskForm" class="mb-8 flex gap-4">
+      <input id="titleInput" type="text" placeholder="Nom de la tâche"
+             class="flex-grow px-5 py-3 border border-blue-300 rounded-xl focus:ring-2 focus:ring-blue-300 outline-none transition"
+             required />
+      <button type="submit"
+              class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl shadow transition flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+        </svg>
+        Ajouter
+      </button>
+    </form>
+
+    <!-- Liste des tâches -->
+    <ul id="taskList" class="space-y-4"></ul>
+  </div>
+</main>
+
+
+
+<script src="js/todos.js"></script>
+</body>
+</html>
