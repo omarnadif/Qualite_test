@@ -26,7 +26,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run unit tests (Jest)
-        run: npx jest
+        run: npm run test
 
       - name: Run E2E tests (Playwright)
         run: npx playwright test
