@@ -1,5 +1,6 @@
 # 📝 ToDo API – Projet Qualité & Test
 
+![Node.js CI](https://github.com/omarnadif/Qualite_test/actions/workflows/ci.yml/badge.svg)
 
 API REST complète pour la gestion des tâches, développée dans le cadre d’un TP Qualité & Test (M2).  
 Inclut frontend moderne, documentation Swagger, tests unitaires (Jest), tests end-to-end (Playwright) et CI/CD GitHub Actions.
